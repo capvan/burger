@@ -1,5 +1,5 @@
 .index {
-    background: url(/source/images/section_index/index_bg.png) center center / cover no-repeat;
+    background: url('./source/images/section_index/index_bg.png') center center / cover no-repeat;
 }
 
 .index__order-button {
@@ -21,7 +21,7 @@
 }
 
 .arrow-down {
-    background: url('/source/images/section_index/arrow-scroll.png') center center no-repeat;
+    background: url('./source/images/section_index/arrow-scroll.png') center center no-repeat;
     position: absolute;
 	height:100px;
 	width:100px;
