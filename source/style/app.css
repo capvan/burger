@@ -315,31 +315,31 @@ template {
 
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("./source/fonts/lifehack_medium-webfont.woff") format("woff"), url("/source/fonts/lifehack_medium-webfont.woff2") format("woff2");
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff"), url("../fonts/lifehack_medium-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("./source/fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("./source/fonts/ubuntu-light-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("./source/fonts/ubuntu-medium-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("./source/fonts/ubuntu-regular-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -535,7 +535,7 @@ footer {
     color: #2f3234; }
 
 .best {
-  background: url("./source/images/section_best/best_bg.png") center center/cover no-repeat; }
+  background: url("../images/section_best/best_bg.png") center center/cover no-repeat; }
 
 .best__item {
   -webkit-box-flex: 1;
