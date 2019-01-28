@@ -1,12 +1,6 @@
 .index {
-    background: url(/source/images/section1/index_bg.png) center center / cover no-repeat;
+    background: url(/source/images/section_index/index_bg.png) center center / cover no-repeat;
 }
-
-// .index__container {
-//     display: flex;
-//     flex-direction: column;
-//     height: 100px;
-// }
 
 .index__order-button {
     margin-left: 15px;
@@ -27,7 +21,7 @@
 }
 
 .arrow-down {
-    background: url('/source/images/section1/arrow-scroll.png') center center no-repeat;
+    background: url('/source/images/section_index/arrow-scroll.png') center center no-repeat;
     position: absolute;
 	height:100px;
 	width:100px;

@@ -1,10 +1,16 @@
 .button {
     background: $red;
     padding: 8px 15px;
-    // margin: 15px;
     border-radius: 5px;
     text-transform: uppercase;
     color: white;
     font-size: 13px;
     border: none;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+
+    &_black {
+        background: #000;
+        margin-top: 17px;
+    }
 }

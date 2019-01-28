@@ -1,0 +1,40 @@
+.best {
+    background: url('/source/images/section_best/best_bg.png') center center /cover no-repeat;
+}
+
+.best__item {
+    flex: 1;
+    margin-right: 15px;
+    text-align: center;
+
+    &last-child {
+        margin-right: 0;
+    }
+}
+
+.best__list {
+    display: flex;
+}
+
+.best__img {
+    display: flex;
+    justify-content: center;
+}
+
+.best__img-pic {
+    height: 89px;
+    display: inline-block;
+}
+
+.best__desc-title {
+    font-family: 'Lifehack-Medium';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.best__desc-text {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+}
