@@ -1,0 +1,27 @@
+//variable colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//normalize
+@import "./_variant/normalize.scss";
+
+//fonts
+@import "./_variant/fonts.scss";
+
+//setup
+@import "./_variant/setup.scss";
+
+//blocks
+@import "blocks/index.scss";
+@import "blocks/header.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
+@import "blocks/best.scss";
+@import "blocks/reviews.scss";
+@import "blocks/fixed-menu.scss";
+
+
+
+

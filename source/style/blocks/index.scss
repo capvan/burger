@@ -1,0 +1,31 @@
+.index {
+    background: url('../images/section_index/index_bg.png') center center / cover no-repeat;
+}
+
+.index__order-button {
+    margin-left: 15px;
+}
+
+.index__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .7;
+}
+
+.index__content-desc {
+    color: white;
+    font-size: 55px;
+    font-family: 'Lifehack-Medium';
+    text-transform: lowercase;
+}
+
+.arrow-down {
+    background: url('../images/section_index/arrow-scroll.png') center center no-repeat;
+    position: absolute;
+	height:100px;
+	width:100px;
+    border: none;
+    bottom: 0;
+    margin: 0 50%;
+}
