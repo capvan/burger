@@ -1,0 +1,26 @@
+.menu-list {
+    background: url('/source/images/section_menu/img1.png') center center /cover no-repeat;
+    position: relative;
+}
+
+.title_white {
+    position: absolute;
+    color: #ffffff;
+    left: 10%;
+    top: 10%;
+}
+
+.menu-accordion__item-title {
+    font-family: 'Gagalin-Regular';
+    text-align: center;
+    color: #ffffff;
+}
+
+.menu-accordion__item {
+    // width:20%;
+    display: flex;
+    overflow:hidden;
+    height: 100%;
+    // background-color: white;
+    flex-direction: column;
+}
