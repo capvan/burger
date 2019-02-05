@@ -1,5 +1,5 @@
 .menu-list {
-    background: url('/source/images/section_menu/img1.png') center center /cover no-repeat;
+    background: url('../images/section_menu/img1.png') center center /cover no-repeat;
     position: relative;
 }
 
@@ -36,7 +36,7 @@
 
 
     &:nth-child(1) {
-        background: url('/source/images/section_menu/img3.png') 90% 50% no-repeat;
+        background: url('../images/section_menu/img3.png') 90% 50% no-repeat;
         overflow: hidden;
         height: 100%;
         background-size: cover;
@@ -44,7 +44,7 @@
 
     &:nth-child(2) {
         left: rem(80px);
-        background: url('/source/images/section_menu/img2.png') 50% 50% no-repeat;
+        background: url('../images/section_menu/img2.png') 50% 50% no-repeat;
         overflow: hidden;
         height: 100%;
         background-size: cover;
@@ -52,7 +52,7 @@
 
     &:nth-child(3) {
         left: rem(160px);
-        background: url('/source/images/section_menu/img4.png') 100% 50% no-repeat;
+        background: url('../images/section_menu/img4.png') 100% 50% no-repeat;
         height: 100%;
         background-size: cover;
     }

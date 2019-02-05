@@ -1,0 +1,134 @@
+.order {
+  background: url("../images/section_order/order_bg.png") center center no-repeat/cover;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: left;
+  color: #ffffff;
+}
+
+.form-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: rem(20px);
+}
+
+.form__row-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form__row-left.form__row-left--padding {
+  padding-top: rem(18px);
+}
+
+.form-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form__block {
+  margin-right: rem(20px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__block-input,
+.form__block-textarea {
+  border-radius: rem(5px);
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  padding: rem(5px) rem(10px);
+  resize: none;
+}
+
+.form__radio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__radio-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: rem(20px);
+}
+
+.form__radio-label:last-child {
+  margin-right: 0;
+}
+
+.form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__radio-text,
+.form__checkbox-text {
+  margin-left: rem(10px);
+  -webkit-transform: translate(rem(0px), rem(-5px));
+          transform: translate(rem(0px), rem(-5px));
+}
+
+.form__block-title--padding {
+  padding-top: rem(17px);
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-fake {
+  display: inline-block;
+  width: rem(16px);
+  height: rem(16px);
+  border: rem(1px) solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  vertical-align: middle;
+  margin-right: rem(5px);
+}
+
+.form__radio-fake::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #e35028;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.form__radio-input:checked + .form__radio-fake::after {
+  width: rem(8px);
+  height: rem(8px);
+}
+/*# sourceMappingURL=order.css.map */
