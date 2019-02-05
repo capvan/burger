@@ -12,7 +12,7 @@
 }
 .form-left {
     flex: 1;
-    padding-right: 20px;
+    padding-right: rem(20px);
 }
 
 .form__row-left {
@@ -20,7 +20,7 @@
     flex: 1;
 
     &.form__row-left--padding {
-        padding-top: 18px;
+        padding-top: rem(18px);
     }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .form__block {
-    margin-right: 20px;
+    margin-right: rem(20px);
     flex: 1;
     &:last-child {
         margin-right: 0;
@@ -40,11 +40,11 @@
 
 .form__block-input,
 .form__block-textarea {
-    border-radius: 5px;
+    border-radius: rem(5px);
     background: #ffffff;
     border: none;
     width: 100%;
-    padding: 5px 10px;
+    padding: rem(5px) rem(10px);
 
     resize: none;
 }
@@ -56,7 +56,7 @@
 
 .form__radio-label {
     display: flex;
-    margin-right: 20px;
+    margin-right: rem(20px);
     
     &:last-child {
         margin-right: 0;
@@ -69,12 +69,12 @@
 
 .form__radio-text,
 .form__checkbox-text {
-    margin-left: 10px;
-    transform: translate(0px, -5px);
+    margin-left: rem(10px);
+    transform: translate(rem(0px), rem(-5px));
 }
 
 .form__block-title--padding {
-    padding-top: 17px;
+    padding-top: rem(17px);
 }
 
 .form__radio-input {
@@ -82,16 +82,16 @@
 }
 .form__radio-fake {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
 
-    border: 1px solid #ffffff;
+    border: rem(1px) solid #ffffff;
     border-radius: 50%;
     background-color: #ffffff;
     position: relative;
     vertical-align: middle;
 
-    margin-right: 5px;
+    margin-right: rem(5px);
 
     &::after {
         content: '';
@@ -108,7 +108,7 @@
 }
 
 .form__radio-input:checked + .form__radio-fake::after {
-        width: 8px;
-        height: 8px;
+        width: rem(8px);
+        height: rem(8px);
 }
 
