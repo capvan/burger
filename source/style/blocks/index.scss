@@ -6,11 +6,25 @@
     margin-left: 15px;
 }
 
+.index__container {
+    height: 100%;
+}
+
 .index__content {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: .7;
+    flex: 1;
+    margin-bottom: 8%;
+}
+
+.index__content-text {
+    flex: 1;
+}
+
+.index__content-img {
+    flex-shrink: 0;
+    flex: 1;
 }
 
 .index__content-desc {
@@ -18,14 +32,33 @@
     font-size: 55px;
     font-family: 'Lifehack-Medium';
     text-transform: lowercase;
+    line-height: 1;
 }
 
 .arrow-down {
     background: url('../images/section_index/arrow-scroll.png') center center no-repeat;
-    position: absolute;
-	height:100px;
-	width:100px;
+    // position: absolute;
+	height: 50px;
+	width: 50px;
     border: none;
     bottom: 0;
     margin: 0 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-bottom: 40px; 
+
+    &:focus {
+        outline: 0;
+        transform: scale(1.2);
+    }
+    &:hover {
+        outline: 0;
+        transform: scale(1.2);
+    }
+}
+
+.index__burger-img {
+    max-height: 100%;
+    max-width: 100%;
+
 }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .menu__list {
@@ -41,8 +42,4 @@
 .header__buttons {
     display: flex;
     align-items: center;
-}
-
-.header__logo-img {
-    padding-top: 13px;
 }

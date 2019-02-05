@@ -7,7 +7,7 @@
     margin-right: 15px;
     text-align: center;
 
-    &last-child {
+    &:nth-child(3) {
         margin-right: 0;
     }
 }
@@ -19,6 +19,7 @@
 .best__img {
     display: flex;
     justify-content: center;
+    margin-bottom: 29px;
 }
 
 .best__img-pic {
@@ -37,4 +38,7 @@
     font-size: 14px;
     font-weight: 300;
     opacity: 0.8;
+    margin-top: 10px;
+    line-height: 1.71;
+    letter-spacing: normal;
 }
