@@ -1,24 +1,16 @@
 .order {
-<<<<<<< HEAD
     background: url("/source/images/section_order/order_bg.png") center center no-repeat/cover;
   }
   
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
-=======
-    background: url('../images/section_order/order_bg.png') center center no-repeat / cover;
-}
-
-.form {
->>>>>>> ddb68ebf051b4a1276befffe4ba18ffb343f8229
     display: flex;
     font-family: 'Ubuntu';
     font-weight: 300;
     line-height: 1.71;
     text-align: left;
     color: #ffffff;
-<<<<<<< HEAD
   }
   
   .form-left {
@@ -115,90 +107,10 @@
     width: 16px;
     height: 16px;
     border: 1px solid #ffffff;
-=======
-}
-.form-left {
-    flex: 1;
-    padding-right: rem(20px);
-}
-
-.form__row-left {
-    display: flex;
-    flex: 1;
-
-    &.form__row-left--padding {
-        padding-top: rem(18px);
-    }
-}
-
-.form-right {
-    display: flex;
-    width: 100%;
-    flex: 1;
-}
-
-.form__block {
-    margin-right: rem(20px);
-    flex: 1;
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.form__block-input,
-.form__block-textarea {
-    border-radius: rem(5px);
-    background: #ffffff;
-    border: none;
-    width: 100%;
-    padding: rem(5px) rem(10px);
-
-    resize: none;
-}
-
-.form__radio-wrap {
-    display: flex;
-    // justify-content: space-between;
-}
-
-.form__radio-label {
-    display: flex;
-    margin-right: rem(20px);
-    
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.form__checkbox-label {
-    display: flex;
-}
-
-.form__radio-text,
-.form__checkbox-text {
-    margin-left: rem(10px);
-    transform: translate(rem(0px), rem(-5px));
-}
-
-.form__block-title--padding {
-    padding-top: rem(17px);
-}
-
-.form__radio-input {
-    display: none;
-}
-.form__radio-fake {
-    display: inline-block;
-    width: rem(16px);
-    height: rem(16px);
-
-    border: rem(1px) solid #ffffff;
->>>>>>> ddb68ebf051b4a1276befffe4ba18ffb343f8229
     border-radius: 50%;
     background-color: #ffffff;
     position: relative;
     vertical-align: middle;
-<<<<<<< HEAD
     margin-right: 5px;
   }
   
@@ -219,27 +131,3 @@
     width: 8px;
     height: 8px;
   }
-=======
-
-    margin-right: rem(5px);
-
-    &::after {
-        content: '';
-        width: 0;
-        height: 0;
-        border-radius: 50%;
-        background-color: #e35028;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-    }
-}
-
-.form__radio-input:checked + .form__radio-fake::after {
-        width: rem(8px);
-        height: rem(8px);
-}
-
->>>>>>> ddb68ebf051b4a1276befffe4ba18ffb343f8229

@@ -11,7 +11,7 @@
 }
 
 .menu-accordion {
-  width: rem(240px);
+  width: 240px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -26,8 +26,8 @@
 
 .menu-accordion__item {
   position: absolute;
-  width: rem(80px);
-  height: rem(650px);
+  width: 80px;
+  height: 650px;
   -webkit-transform-origin: left bottom 0;
           transform-origin: left bottom 0;
   white-space: nowrap;
@@ -41,7 +41,7 @@
 }
 
 .menu-accordion__item:nth-child(2) {
-  left: rem(80px);
+  left: 80px;
   background: url("../images/section_menu/img2.png") 50% 50% no-repeat;
   overflow: hidden;
   height: 100%;
@@ -49,7 +49,7 @@
 }
 
 .menu-accordion__item:nth-child(3) {
-  left: rem(160px);
+  left: 160px;
   background: url("../images/section_menu/img4.png") 100% 50% no-repeat;
   height: 100%;
   background-size: cover;

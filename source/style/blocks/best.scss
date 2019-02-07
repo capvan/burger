@@ -4,7 +4,7 @@
 
 .best__item {
     flex: 1;
-    margin-right: rem(15px);
+    margin-right: 15px;
     text-align: center;
 
     &:nth-child(3) {
@@ -19,26 +19,26 @@
 .best__img {
     display: flex;
     justify-content: center;
-    margin-bottom: rem(29px);
+    margin-bottom: 29px;
 }
 
 .best__img-pic {
-    height: rem(89px);
+    height: 89px;
     display: inline-block;
 }
 
 .best__desc-title {
     font-family: 'Lifehack-Medium';
-    font-size: rem(24px);
+    font-size: 24px;
     font-weight: 500;
 }
 
 .best__desc-text {
     font-family: 'Ubuntu';
-    font-size: rem(14px);
+    font-size: 14px;
     font-weight: 300;
     opacity: 0.8;
-    margin-top: rem(10px);
+    margin-top: 10px;
     line-height: 1.71;
     letter-spacing: normal;
 }
