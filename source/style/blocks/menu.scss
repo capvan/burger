@@ -24,6 +24,7 @@
     color: #ffffff;
     transform: rotate(-90deg);
     // transform-origin: 0;
+    font-size: 35px;
 }
 
 .menu-accordion__item {
@@ -66,4 +67,12 @@
         bottom: 0;
         background-color: rgba(20, 20, 20, 0.7)
     }
+}
+
+.menu-accordion__link {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 120px;
 }
