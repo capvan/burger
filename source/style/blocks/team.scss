@@ -55,6 +55,8 @@
             &::before {
                 border: 5px solid transparent;
                 border-top: 5px solid #f9b43b;
+                transform: rotate(180deg);
+                bottom: -20px;
             }
         }
     }
@@ -83,6 +85,14 @@
     color: #ffffff;
     width: 208px;
     height: 95px;
+
+    &.team-accordion__link {
+        font-family: inherit;
+    }
+
+    &.team-accordion__details-text {
+        margin: 0 20px;
+    }
 }
 
 .team-accordion__details-img {
@@ -94,10 +104,6 @@
 
 .team-accordion__details-pic {
     transform: translate(-15%, 0);
-}
-
-.team-accordion__link {
-    font-family: inherit;
 }
 
 .team-accordion__details-title {
