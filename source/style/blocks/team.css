@@ -1,6 +1,7 @@
 .team {
-  background: url("/source/images/section_team/bckg_team.png") center center/cover no-repeat;
-  position: relative; }
+  background: url("../images/section_team/bckg_team.png") center center/cover no-repeat;
+  position: relative;
+}
 
 .wrapper__team {
   position: absolute;
@@ -10,73 +11,92 @@
   top: 0;
   opacity: 0.93;
   background-color: #2f3234;
-  padding: 5% 2% 0 7%; }
+  padding: 5% 2% 0 7%;
+}
 
 .triangle {
   background: #fff;
   position: relative;
-  color: #fff; }
-  .triangle::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    bottom: -25px;
-    border: 5px solid transparent;
-    border-top: 5px solid #fff; }
+  color: #fff;
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  left: rem(-20px);
+  bottom: rem(-25px);
+  border: rem(5px) solid transparent;
+  border-top: rem(5px) solid #fff;
+}
 
 .team-accordion__item {
   font-family: 'Gagalin-Regular';
-  font-size: 14px;
+  font-size: rem(14px);
   line-height: 2;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 35px; }
-  .team-accordion__item:last-child {
-    margin-bottom: 0; }
-  .team-accordion__item.is_active .team-accordion__link {
-    color: #f9b43b; }
-  .team-accordion__item.is_active .triangle {
-    background: #f9b43b;
-    color: #f9b43b; }
-    .team-accordion__item.is_active .triangle::before {
-      border: 5px solid transparent;
-      border-top: 5px solid #f9b43b; }
-  .team-accordion__item.is_active .team-accordion__details {
-    height: 100%; }
+  margin-bottom: rem(35px);
+}
+
+.team-accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+.team-accordion__item.is_active .team-accordion__link {
+  color: #f9b43b;
+}
+
+.team-accordion__item.is_active .triangle {
+  background: #f9b43b;
+  color: #f9b43b;
+}
+
+.team-accordion__item.is_active .triangle::before {
+  border: rem(5px) solid transparent;
+  border-top: rem(5px) solid #f9b43b;
+}
+
+.team-accordion__item.is_active .team-accordion__details {
+  height: 100%;
+}
 
 .team-accordion__details {
   height: 0;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+}
 
 .team-accordion__details-text,
 .team-accordion__link {
   font-family: 'Ubuntu';
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   line-height: 1.71;
   text-align: left;
   color: #ffffff;
-  width: 208px;
-  height: 95px; }
+  width: rem(208px);
+  height: rem(95px);
+}
 
 .team-accordion__details-img {
-  width: 100px;
-  height: 99.8px;
+  width: rem(100px);
+  height: rem(99.8px);
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .team-accordion__details-pic {
   -webkit-transform: translate(-15%, 0);
-  -ms-transform: translate(-15%, 0);
-  transform: translate(-15%, 0); }
+          transform: translate(-15%, 0);
+}
 
 .team-accordion__link {
-  font-family: inherit; }
+  font-family: inherit;
+}
 
 .team-accordion__details-title {
-  font-weight: 600; }
-
+  font-weight: 600;
+}
 /*# sourceMappingURL=team.css.map */

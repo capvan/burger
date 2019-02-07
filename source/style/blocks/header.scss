@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: rem(15px);
 }
 
 .menu__list {
     display: flex;
     align-items: center;
     font-family: 'Ubuntu';
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
 }
 
@@ -26,11 +26,11 @@
     &::after {
         content: '';
         background: white;
-        width: 5px;
-        height: 5px;
+        width: rem(5px);
+        height: rem(5px);
         border-radius: 50%;
         display: inline-block;
-        margin: 0 10px;
+        margin: 0 rem(10px);
     }
 }
 
