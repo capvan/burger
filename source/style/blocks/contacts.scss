@@ -1,6 +1,6 @@
 .footer__container {
     flex-direction: row;
-    margin: 10px 80px;
+    margin: rem(10px) rem(80px);
 }
 .contacts__bg {
     position: relative;
@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     background: url('../images/section_contacts/footer.png') center center /cover no-repeat;
-    height: 60px;
+    height: rem(60px);
     display: flex;
     color: #ffffff;
 }
@@ -29,15 +29,15 @@
 .socials__list {
     display: flex;
     justify-content: space-between;
-     padding: 0 140px;
+     padding: 0 rem(100px);
 }
 
 .socials__item-img {
-    transform: translate(0, 5px);
+    transform: translate(0, rem(5px));
 
     &.socials__item-link--vk {
-        width: 23px;
-        height: 13px;
+        width: rem(23px);
+        height: rem(13px);
     }
 }
 
@@ -50,12 +50,12 @@
 
     &::before {
         content: "";
-        width: 12px;
-        height: 12px;
+        width: rem(12px);
+        height: rem(12px);
         background-image: url('../images/section_contacts/icons/phone.png');
         background-repeat: no-repeat;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
 }
 

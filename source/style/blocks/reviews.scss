@@ -34,23 +34,23 @@
     right: 0;
     bottom: 0;
     background: rgba(#000, .5);
-    padding: 25px;
+    padding: rem(25px);
     opacity: 0;
     transition: opacity .3s;
 }
 
 .reviews__title {
     font-family: 'Gagalin-Regular';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #ffffff;
 }
 
 .reviews__text {
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #ffffff;
     line-height: 1.71;
     letter-spacing: normal;
-    margin-top: 30px;
+    margin-top: rem(30px);
 }

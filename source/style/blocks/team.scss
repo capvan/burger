@@ -22,20 +22,20 @@
     &::before {
         content: ''; 
         position: absolute; 
-        left: -20px; 
-        bottom: -25px;
-        border: 5px solid transparent;
-        border-top: 5px solid #fff;
+        left: rem(-20px); 
+        bottom: rem(-25px);
+        border: rem(5px) solid transparent;
+        border-top: rem(5px) solid #fff;
    }
 }
 
 .team-accordion__item {
     font-family: 'Gagalin-Regular';
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 2;
     text-align: left;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 
     &:last-child {
         margin-bottom: 0;
@@ -78,26 +78,26 @@
 .team-accordion__details-text,
 .team-accordion__link {
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.71;
     text-align: left;
     color: #ffffff;
-    width: 208px;
-    height: 95px;
+    width: rem(208px);
+    height: rem(95px);
 
     &.team-accordion__link {
         font-family: inherit;
     }
 
     &.team-accordion__details-text {
-        margin: 0 20px;
+        margin: 0 rem(20px);
     }
 }
 
 .team-accordion__details-img {
-    width: 100px;
-    height: 99.8px;
+    width: rem(100px);
+    height: rem(99.8px);
     border-radius: 50%;
     overflow: hidden;
 }

@@ -22,7 +22,7 @@
     text-align: center;
     color: #ffffff;
     transform: rotate(-90deg);
-    font-size: 35px;
+    font-size: rem(35px);
 }
 
 .menu-accordion__item {
@@ -32,7 +32,7 @@
     display: flex;
 
     &.is_active {
-        width: 550px;
+        width: rem(550px);
         height: 100%;
         color: #ffffff;
         // background-color: rgba(255, 255, 255, 0.5);
@@ -72,14 +72,14 @@
 .menu-accordion__link {
     display: flex;
     height: 100%;
-    width: 80px;
+    width: rem(80px);
     align-items: center;
     justify-content: center;
     -webkit-box-pack: center;
 }
 
 .menu-accordion__item-text {
-    width: 550px;
+    width: rem(550px);
     white-space: normal;
     word-wrap: break-word;
 }
