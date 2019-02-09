@@ -24,6 +24,16 @@
         .reviews__item-hover {
             opacity: 1;
         }
+        @include tablets {
+            padding: 10px 10px;
+            margin-top: rem(5px);
+            overflow: scroll;
+        }
+    }
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
     }
 }
 
@@ -37,6 +47,8 @@
     padding: rem(25px);
     opacity: 0;
     transition: opacity .3s;
+
+
 }
 
 .reviews__title {

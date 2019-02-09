@@ -10,9 +10,9 @@
     font-weight: 500;
     cursor: pointer;
 
-    @include tablets {
-        display: none;
-    }
+    // @include tablets {
+    //     display: none;
+    // }
 
     &:focus {
         outline: 0;

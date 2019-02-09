@@ -12,6 +12,20 @@
     opacity: 0.93;
     background-color: #2f3234;
     padding: 5% 2% 0 7%;
+
+    @include tablets {
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.team-accordion {
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .triangle {
@@ -73,6 +87,11 @@
     height: 0;
     overflow: hidden;
     display: flex;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .team-accordion__details-text,
@@ -88,6 +107,10 @@
 
     &.team-accordion__link {
         font-family: inherit;
+
+        // @include tablets {
+        //     display: inline-flex;
+        // }
     }
 
     &.team-accordion__details-text {
