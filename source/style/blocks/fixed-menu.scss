@@ -17,6 +17,10 @@
     border-radius: 50%;
     margin-bottom: rem(10px);
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &:hover, &.is-active {
         border-color: white;
         cursor: pointer;

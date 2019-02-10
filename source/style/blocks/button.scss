@@ -20,17 +20,17 @@
     }
     &:hover {
         outline: 0;
-        transform: scale(1.2);
+        // transform: scale(1.2);
+        background: #ff3308;
     }
 
     &_black {
         background: #000;
-        margin-top: rem(17px);
     }
 
-    &.index__order-button--order {
-        margin-top: rem(20px);
-    }
+    // &.index__order-button--order {
+    //     margin-top: rem(20px);
+    // }
 
     &.index__order-button--disable {
         background: transparent;

@@ -4,6 +4,12 @@
 
 .index__order-button {
     margin-left: rem(15px);
+
+        @include tablets {
+            margin-left: 0;
+            margin-right: 40px;
+            margin-top: -45px;
+    }
 }
 
 .index__container {
@@ -69,8 +75,8 @@
     // max-width: 100%;
     
     @include tablets {
-        width: 50%;
-        height: 100%;
+        max-height: 70%;
+        max-width: 70%;
     }
 
 }
@@ -78,9 +84,12 @@
 .hamburger-menu-link {
     width: rem(25px);
     height: rem(23px);
-    margin-left: rem(20px);
+    top: 20px;
+    right: 20px;
+    z-index: 100;
 
     display: none;
+    position: fixed;
 
     @include tablets() {
         display: flex;

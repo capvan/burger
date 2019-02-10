@@ -19,28 +19,17 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 0;
     }
 }
 
 .team-accordion {
     @include tablets {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
-
-.triangle {
-    background: #fff;
-    position: relative;
-    color: #fff;
-
-    &::before {
-        content: ''; 
-        position: absolute; 
-        left: rem(-20px); 
-        bottom: rem(-25px);
-        border: rem(5px) solid transparent;
-        border-top: rem(5px) solid #fff;
-   }
 }
 
 .team-accordion__item {
@@ -59,26 +48,21 @@
         .team-accordion__link {
             color: #f9b43b;
         }
+        
     }
 
     &.is_active {
-        .triangle {
-            background: #f9b43b;
-            color: #f9b43b;
-
-            &::before {
-                border: 5px solid transparent;
-                border-top: 5px solid #f9b43b;
-                transform: rotate(180deg);
-                bottom: -20px;
+        .team-accordion__link::before {
+            border: 5px solid transparent;
+            border-top: 5px solid #f9b43b;
+            transform: rotate(180deg);
+            bottom: -20px;
             }
         }
-    }
 
     &.is_active {
         .team-accordion__details {
             height: 100%;
-            // overflow: hidden;
         }
     }
 }
@@ -91,6 +75,7 @@
     @include tablets {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -107,10 +92,20 @@
 
     &.team-accordion__link {
         font-family: inherit;
+        position: relative;
+        color: #fff;
 
-        // @include tablets {
-        //     display: inline-flex;
-        // }
+        &::before {
+            content: ''; 
+            // position: absolute; 
+            left: rem(-20px); 
+            bottom: rem(-25px);
+            border: rem(5px) solid transparent;
+            border-top: rem(5px) solid #fff;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+       }
     }
 
     &.team-accordion__details-text {
@@ -126,11 +121,17 @@
 }
 
 .team-accordion__details-pic {
-    transform: translate(-15%, 0);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .team-accordion__details-title {
     font-weight: 600;
+
+    @include tablets {
+    text-align: center;
+    }
 }
 
 
