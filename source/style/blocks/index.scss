@@ -91,7 +91,23 @@
     display: none;
     position: fixed;
 
+    display: flex;
+    flex-direction: column;
+
     @include tablets() {
         display: flex;
     }
+}
+.hamburger-menu__item {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    background-color: #fff;
+    border-radius: 20%;
+
 }

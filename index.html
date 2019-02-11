@@ -50,8 +50,11 @@
                             </nav>
                             <button type="button" class="button index__order-button">Заказать</button>
                             <a class="hamburger-menu-link" href="">
+                                <span class="hamburger-menu__item"></span>
+                                <span class="hamburger-menu__item"></span>
+                                <span class="hamburger-menu__item"></span>
                                 <!-- <div class="hamburger-menu-link__bars"></div> -->
-                                <img src="./source/images/section_index/icons/hamburger_menu.png" alt="Меню" class="hamburger-menu-img">
+                                <!-- <img src="./source/images/section_index/icons/hamburger_menu.png" alt="Меню" class="hamburger-menu-img"> -->
                             </a>
                         </div>
                     </header>
@@ -284,8 +287,8 @@
                 <div class="container">
                     <div class="title">Закажите доставку</div>
                     <form action="" class="form">
-                        <div class="form__column">
-                            <div class="form__row">
+                        <div class="form-left">
+                            <div class="form__row-left">
                                 <label class="form__block">
                                     <div class="form__block-title">Имя</div>
                                     <input type="text" class="form__block-input">
@@ -295,13 +298,13 @@
                                     <input type="text" class="form__block-input" placeholder="89212264923">
                                 </label>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row-left">
                                 <label class="form__block">
-                                    <div class="form__block-title">Улица</div>
+                                    <div class="form__block-title form__block-title--padding">Улица</div>
                                     <input type="text" class="form__block-input">
                                 </label>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row-left form__row-left--padding">
                                 <label class="form__block">
                                     <div class="form__block-title">Дом</div>
                                     <input type="text" class="form__block-input">
@@ -319,81 +322,79 @@
                                     <input type="text" class="form__block-input">
                                 </label>
                             </div>
-                            <div class="form__row">
-                                <label class="form__block">
-                                    <div class="form__block-title">Комментарий</div>
-                                    <textarea class="form__block-textarea" placeholder="Оставьте комментарий" rows=5></textarea>
-                                </label>
-                            </div>
-                            <div class="form__radio">
-                                <div class="form__radio-wrap">
-                                    <label for="" class="form__radio-label">
-                                        <input type="radio" class="form__radio-input" name="review" checked>
-                                        <div class="form__radio-fake"></div>
-                                        <div class="form__radio-text">Оплата по карте</div>
-                                    </label>
-                                    <label for="" class="form__radio-label">
-                                        <input type="radio" class="form__radio-input" name="review">
-                                        <div class="form__radio-fake"></div>
-                                        <div class="form__radio-text">Потребуется сдача</div>
-                                    </label>
-                                </div>
-                                <div class="form__checkbox-wrap">
-                                    <label for="" class="form__checkbox-label">
-                                        <input type="checkbox" class="form__checkbox-input" name="review" checked>
-                                        <!-- <div class="form__checkbox-fake"></div> -->
-                                        <div class="form__checkbox-text">Не перезванивать</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form__button">
-                                <button class="button index__order-button index__order-button--order">Заказать</button>
-                                <button class="button index__order-button--disable">Очистить</button>
-                            </div>
                         </div>
+                        <div class="form-right">
+                            <label class="form__block">
+                                <div class="form__block-title">Комментарий</div>
+                                <textarea class="form__block-textarea" placeholder="Оставьте комментарий" rows=5></textarea>
+                                <div class="form__radio">
+                                    <div class="form__radio-wrap">
+                                        <label for="" class="form__radio-label">
+                                            <input type="radio" class="form__radio-input" name="review" checked>
+                                            <div class="form__radio-fake"></div>
+                                            <div class="form__radio-text">Оплата по карте</div>
+                                        </label>
+                                        <label for="" class="form__radio-label">
+                                            <input type="radio" class="form__radio-input" name="review">
+                                            <div class="form__radio-fake"></div>
+                                            <div class="form__radio-text">Потребуется сдача</div>
+                                        </label>
+                                    </div>
+                                    <div class="form__checkbox-wrap">
+                                        <label for="" class="form__checkbox-label">
+                                            <input type="checkbox" class="form__checkbox-input" name="review" checked>
+                                            <!-- <div class="form__checkbox-fake"></div> -->
+                                            <div class="form__checkbox-text">Не перезванивать</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form__button">
+                                    <button class="button index__order-button index__order-button--order" type="submit">Заказать</button>
+                                    <button class="button index__order-button--disable" type="reset">Очистить</button>
+                                </div>
+                            </label>
+                        </div>
+                    </form>
                 </div>
-                </form>
+            </section>
+            <section class="section contacts">
+                <div class="contacts__bg">
+                    <img class="contacts__bg-img" src="./source/images/section_contacts/map.png">
+                </div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="footer-left">
+                            <div class="footer-left__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                            <div class="footer-left__phone">+7 (812) 377-13-77</div>
+                        </div>
+                        <div class="footer-right">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__item-link socials__item-link--vk" href="#">
+                                        <img src="./source/images/section_contacts/icons/vk.png" alt="vk" class="socials__item-img">
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__item-link socials__item-link--fb" href="#">
+                                        <img src="./source/images/section_contacts/icons/fb_hover.png" alt="" class="socials__item-img">
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__item-link socials__item-link--instagram" href="#">
+                                        <img src="./source/images/section_contacts/icons/inst.png" alt="instagram" class="socials__item-img">
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__item-link socials__item-link--twitter" href="#">
+                                        <img src="./source/images/section_contacts/icons/twitter.png" alt="twitter" class="socials__item-img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </section>
         </div>
-    </div>
-    </section>
-    <section class="section contacts">
-        <div class="contacts__bg">
-            <img class="contacts__bg-img" src="./source/images/section_contacts/map.png">
-        </div>
-        <footer class="footer">
-            <div class="container footer__container">
-                <div class="footer-left">
-                    <div class="footer-left__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                    <div class="footer-left__phone">+7 (812) 377-13-77</div>
-                </div>
-                <div class="footer-right">
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a class="socials__item-link socials__item-link--vk" href="#">
-                                <img src="./source/images/section_contacts/icons/vk.png" alt="vk" class="socials__item-img">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__item-link socials__item-link--fb" href="#">
-                                <img src="./source/images/section_contacts/icons/fb_hover.png" alt="" class="socials__item-img">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__item-link socials__item-link--instagram" href="#">
-                                <img src="./source/images/section_contacts/icons/inst.png" alt="instagram" class="socials__item-img">
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__item-link socials__item-link--twitter" href="#">
-                                <img src="./source/images/section_contacts/icons/twitter.png" alt="twitter" class="socials__item-img">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </section>
-    </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
