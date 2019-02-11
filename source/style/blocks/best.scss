@@ -6,27 +6,47 @@
     flex: 1;
     margin-right: rem(15px);
     text-align: center;
+    // padding: 0 rem(15px);
 
     &:nth-child(3) {
         margin-right: 0;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .best__list {
     display: flex;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .best__img {
     display: flex;
     justify-content: center;
     margin-bottom: rem(29px);
-    height: rem(89px);
+
 }
 
 .best__img-pic {
-    max-width: 100%;
-    max-height: 100%;
-    // display: inline-block;
+    // max-width: 100%;
+    // max-height: 100%;
+    height: rem(89px);
+    width: rem(89px);
+}
+
+.best__desc {
+
+    @include phones {
+        text-align: left;
+        margin-left: 10px;
+    }
 }
 
 .best__desc-title {
