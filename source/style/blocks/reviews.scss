@@ -27,12 +27,21 @@
 
         @include tablets {
             padding: 10px 10px;
+            // opacity: 1;
+            text-align: center;
         }
     }
 
     @include tablets {
         width: 50%;
         height: 25%;
+        text-align: center;
+    }
+
+    @include phones {
+        width: 50%;
+        height: 25%;
+        text-align: center;
     }
 }
 
@@ -67,7 +76,12 @@
     margin-bottom: 1.0625rem;
 
     @include tablets {
-        max-width: 100%;
-        max-height: 100%;
+        // max-width: 100%;
+        // max-height: 100%;
+        display: none;
+    }
+
+    @include phones {
+        display: none;
     }
 }

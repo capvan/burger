@@ -1,5 +1,5 @@
 .order {
-    background: url("../images/section_order/order_bg.png") center center no-repeat/cover;
+    background: url("../images/section_order/order_bg.png") center center no-repeat;
   }
   
   .form {
@@ -56,6 +56,14 @@
   
   .form__row-left.form__row-left--padding {
     padding-top: rem(18px);
+
+    @include tablets {
+      padding-top: 0;
+    }
+
+    @include phones {
+      padding-top: 0;
+    }
   }
   
   .form-right {
@@ -122,6 +130,14 @@
     display: flex;
     align-items: center;
     margin-bottom: rem(20px);
+
+    @include tablets {
+      margin-bottom: 0;
+    }
+
+    @include phones {
+      margin-bottom: 0;
+    }
   }
   
   .form__radio-text,

@@ -4,6 +4,14 @@
     font-family: 'Gagalin-Regular';
     line-height: 1.1;
     margin-bottom: rem(15px);
+
+    @include tablets {
+        margin-bottom: 0;
+      }
+  
+      @include phones {
+        margin-bottom: 0;
+      }
     
     &_black {
     color: $black;

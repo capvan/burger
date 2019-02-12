@@ -23,6 +23,10 @@
     color: #ffffff;
     transform: rotate(-90deg);
     font-size: rem(35px);
+
+    &.is_active {
+        color: #f9b43b;
+    }
 }
 
 .menu-accordion__item {
@@ -36,14 +40,26 @@
         height: 100%;
         color: #ffffff;
         // background-color: rgba(255, 255, 255, 0.5);
-    }
 
+        @include tablets {
+            width: 25.375rem;
+        }
+
+        @include phones {
+            width: 20.375rem;
+        }
+
+        .menu-accordion__item-title {
+            color: #f9b43b;
+        }
+    }
 
     &.menu-accordion__item--meat {
         background: url('../images/section_menu/img3.png') 90% 50% no-repeat;
         overflow: hidden;
         height: 100%;
         background-size: cover;
+        
     }
 
     &.menu-accordion__item--veget {
@@ -76,6 +92,12 @@
     align-items: center;
     justify-content: center;
     -webkit-box-pack: center;
+
+    @include tablets {
+        width: 2rem;
+        padding: 1.875rem 2.375rem;
+    }
+    
 }
 
 .menu-accordion__item-text {

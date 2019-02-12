@@ -21,10 +21,26 @@
         flex-direction: column;
         padding: 0;
     }
+
+    @include phones {
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .team-accordion {
     @include tablets {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include phones {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -47,6 +63,14 @@
     &.is_active {
         .team-accordion__link {
             color: #f9b43b;
+            
+            @include tablets {
+                text-align: center;
+            }
+
+            @include phones {
+                text-align: center;
+            }
         }
         
     }
@@ -76,6 +100,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -132,6 +164,10 @@
     @include tablets {
     text-align: center;
     }
+
+    @include phones {
+        text-align: center;
+        }
 }
 
 
