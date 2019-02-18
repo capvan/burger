@@ -1,62 +1,92 @@
-.overlay {
-    position: fixed;
-    background: #2f3234;;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
+// .overlay {
+//     position: fixed;
+//     background: #2f3234;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 0%;
+//     opacity: 0;
+//     visibility: visible;
+//     overflow: hidden;
 
-    &.overlay--open {
-        opacity: .9;
-        visibility: visible;
-        height: 100%;
-    }
+//     &.overlay--open {
+//         opacity: .9;
+//         visibility: visible;
+//         height: 100%;
+//     }
+// }
+
+// .overlay-menu {
+//     position: relative;
+//     height: 70%;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     font-size: 40px;
+//     text-align: center;
+// }
+
+// .overlay-menu__list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0 auto;
+//     display: inline-block;
+//     position: relative;
+//     height: 100%; 
+// }
+
+// .overlay-menu__item {
+//     text-transform: uppercase;
+//     display: block;
+//     height: 25%;
+//     min-height: 50px;
+//     position: relative;
+//     opacity: 0;
+// }
+
+// .overlay-menu__link {
+//     display: block;
+//     position: relative;
+//     text-decoration: none;
+//     overflow: hidden;
+        
+//     &:after {
+//         content: '';
+//         position: absolute;
+//         bottom: 0;
+//         left: 50%;
+//         width: 0%;
+//         transform: translateX(-50%);
+//         height: 3px;
+//         transition: .35s;
+//     }
+// }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #2f3234;
+    opacity: 0.9;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .overlay-menu {
     position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 40px;
+    top: 25%;
+    width: 100%;
     text-align: center;
-}
-
-.overlay-menu__list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%; 
-}
-
-.overlay-menu__item {
-    display: block;
-    height: 25%;
-    min-height: 50px;
-    position: relative;
-    opacity: 0;
+    margin-top: 30%;
 }
 
 .overlay-menu__link {
-    display: block;
-    position: relative;
+    padding: 8px;
     text-decoration: none;
-    overflow: hidden;
-        
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0%;
-        transform: translateX(-50%);
-        height: 3px;
-        transition: .35s;
-    }
+    font-size: 50px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
 }
-
