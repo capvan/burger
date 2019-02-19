@@ -1,5 +1,9 @@
 .order {
     background: url("../images/section_order/order_bg.png") center center no-repeat /cover;
+
+    @include phones {
+      background-size: inherit;
+    }
   }
   
   .form {
