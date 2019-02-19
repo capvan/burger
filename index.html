@@ -48,42 +48,17 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="overlay" id="overlayNav">
-                                <nav class="overlay-menu">
-                                    <ul class="overlay-menu__list">
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">О нас</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Бургеры</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Команда</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Меню</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Отзывы</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Как мы работаем</a>
-                                        </li>
-                                        <li class="overlay-menu__item">
-                                            <a class="overlay-menu__link" href="#">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
 
                             <button type="button" class="button index__order-button">Заказать</button>
-                            <a class="hamburger-menu-link" href="">
-                                <span class="hamburger-menu__item"></span>
-                                <span class="hamburger-menu__item"></span>
-                                <span class="hamburger-menu__item"></span>
-                                <!-- <div class="hamburger-menu-link__bars"></div> -->
-                                <!-- <img src="./source/images/section_index/icons/hamburger_menu.png" alt="Меню" class="hamburger-menu-img"> -->
-                            </a>
+                            <div class="hamburger-menu">
+                                <a class="hamburger-menu-link" href="" id="toggle">
+                                    <span class="hamburger-menu__item"></span>
+                                    <span class="hamburger-menu__item"></span>
+                                    <span class="hamburger-menu__item"></span>
+                                    <!-- <div class="hamburger-menu-link__bars"></div> -->
+                                    <!-- <img src="./source/images/section_index/icons/hamburger_menu.png" alt="Меню" class="hamburger-menu-img"> -->
+                                </a>
+                            </div>
                         </div>
                     </header>
                     <div class="index__content">
@@ -141,6 +116,15 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section burger">
+                <div class="container">
+                    <div class="slider-wrap">
+                        <a class="slider__button-prev"></a>
+                        <ul class="slider-list"></ul>
+                        <a class="slider__button-next"></a>
+                    </div>
                 </div>
             </section>
             <section class="section reviews">
@@ -424,6 +408,39 @@
             </section>
         </div>
     </div>
+    <div class="overlay" id="overlayNav">
+        <div class="header__logo header__logo-overlay">
+            <a class="logo-link" href="#">
+                <img class="logo-img" src="./source/images/section_index/logo.svg" alt="MrBurger логотип">
+            </a>
+        </div>
+        <nav class="overlay-menu">
+            <ul class="overlay-menu__list">
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">О нас</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Бургеры</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Команда</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Меню</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Как мы работаем</a>
+                </li>
+                <li class="overlay-menu__item">
+                    <a class="overlay-menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item is-active"></li>
@@ -437,6 +454,7 @@
             <li class="fixed-menu__item"></li>
         </ul>
     </nav>
+    <script src="./source/js/main.js"></script>
 </body>
 
 </html>

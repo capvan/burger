@@ -63,7 +63,7 @@
 
 .overlay {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     left: 0;
     top: 0;
@@ -72,21 +72,42 @@
     overflow: hidden;
     transition: 0.5s;
     z-index: 10;
+    display: none;
+
+    &.overlay-menu--open{
+        display: block;
+    }
 }
 
 .overlay-menu {
     position: relative;
-    top: 25%;
+    // top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .overlay-menu__link {
-    padding: 8px;
+    // padding: 8px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: rem(30px);
     color: #fff;
     display: block;
     transition: 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.overlay-menu__item:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: rem(5px);
+    height: rem(5px);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.overlay-menu__item:last-child::after {
+    display: none;
 }

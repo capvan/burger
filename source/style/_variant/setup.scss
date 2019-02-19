@@ -13,6 +13,7 @@ html {
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: $black;
+  font-family: 'Ubuntu';
 }
 
 .container {
