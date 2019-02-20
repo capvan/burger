@@ -1,5 +1,6 @@
 .order {
     background: url("../images/section_order/order_bg.png") center center no-repeat /cover;
+    background-attachment: fixed;
 
     @include phones {
       background-size: inherit;
