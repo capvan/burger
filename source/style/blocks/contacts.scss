@@ -31,6 +31,14 @@
     height: rem(60px);
     display: flex;
     color: #ffffff;
+
+    @include tablets {
+        align-items: center;
+    }
+
+    @include phones {
+        align-items: center;
+    }
 }
 
 .socials__list {
@@ -60,6 +68,29 @@
 
 .footer-left {
     width: 50%;
+
+    @include tablets {
+        // font-size: 10px;
+        text-align: center;
+    }
+
+    @include phones {
+        // font-size: 10px;
+        text-align: center;
+    }
+}
+
+.footer-left__adress {
+    
+    @include tablets {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    @include phones {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
 }
 
 .footer-left__phone {
