@@ -1,3 +1,5 @@
+//Гамбургер меню
+
 let menu = (function (options) {
     // let menu = document.querySelector('#overlayNav');
     let body = document.querySelector('body');
@@ -37,3 +39,41 @@ let menu = (function (options) {
 });
 
 menu.openMenu();
+
+
+//Горизонтальный слайдер
+let teamAccoJS = () => {
+    //выборка всех ссылок
+    let oTeamLink = document.querySelectorAll(".team-accordion__link");
+    //переборка выбраанных ссылок методом forEach
+    oTeamLink.forEach(function(personName) {
+
+        //Добавление обработчика событий на каждую ссылку
+        personName.addEventListener("click", function(e) {
+            e.preventDefault();
+            //при каждом клике переменная заново создается
+            //В переменную записана выборка team-accordion__item is_active. При первом клике будет undefined, нет активных классов
+            let activePerson = document.querySelector(".team-accordion__item.is_active");
+
+            if (activePerson){
+                let teamAccordeonDetails = activePerson.querySelector(".team-accordion__details")
+
+                teamAccordeonDetails.style.height = "0px";
+                activePerson.classList.remove("is_active");
+            }
+//Если в activePerson undefined(false). Отрицание = кликов нет, выполнится код
+            if(!activePerson || activePerson.querySelector(".team-accordion__link") != e.target){
+                //Находим e.target и добавляем активный класс
+                let currentPerson = e.target.closest(".team-accordion__item");
+                currentPerson.classList.add("is_active");
+
+                let currentPersonInfo = currentPerson.querySelector(".team-accordion__details");
+                currentPersonInfo.style.height = currentPersonInfo.scrollHeight + "px";
+            }
+
+        })
+    })
+    
+};
+ teamAccoJS();
+

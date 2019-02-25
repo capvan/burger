@@ -100,18 +100,14 @@
             bottom: 5px;
             }
         }
-
-    &.is_active {
-        .team-accordion__details {
-            height: 100%;
-        }
     }
-}
+
 
 .team-accordion__details {
     height: 0;
     overflow: hidden;
     display: flex;
+    transition: height 0.5s;
 
     @include tablets {
         display: flex;
@@ -184,7 +180,7 @@
 
     @include phones {
         text-align: center;
-        }
+    }
 }
 
 
