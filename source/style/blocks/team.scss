@@ -34,14 +34,14 @@
 
 .team-accordion {
     @include tablets {
-        text-align: center;
+        // text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     @include phones {
-        text-align: center;
+        // text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,7 +60,24 @@
         margin-bottom: 0;
     }
 
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        text-align: center;
+    }
+    
     &.is_active {
+
+        @include tablets {
+            text-align: center;
+        }
+
+        @include phones {
+            text-align: center;
+        }
+
         .team-accordion__link {
             color: #f9b43b;
             
@@ -80,7 +97,7 @@
             border: 5px solid transparent;
             border-top: 5px solid #f9b43b;
             transform: rotate(180deg);
-            bottom: -20px;
+            bottom: 5px;
             }
         }
 
@@ -129,9 +146,9 @@
 
         &::before {
             content: ''; 
-            // position: absolute; 
+            position: absolute; 
             left: rem(-20px); 
-            bottom: rem(-25px);
+            bottom: 0;
             border: rem(5px) solid transparent;
             border-top: rem(5px) solid #fff;
             display: inline-block;

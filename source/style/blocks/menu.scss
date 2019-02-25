@@ -39,6 +39,10 @@
         width: rem(550px);
         height: 100%;
         color: #ffffff;
+
+            .menu-accordion__content {
+                width: rem(550px);
+            }
         // background-color: rgba(255, 255, 255, 0.5);
 
         @include tablets {
@@ -54,26 +58,26 @@
         }
     }
 
-    &.menu-accordion__item--meat {
-        background: url('../images/section_menu/img3.png') 90% 50% no-repeat;
-        overflow: hidden;
-        height: 100%;
-        background-size: cover;
+    // &.menu-accordion__item--meat {
+    //     background: url('../images/section_menu/img3.png') 90% 50% no-repeat;
+    //     overflow: hidden;
+    //     height: 100%;
+    //     background-size: cover;
         
-    }
+    // }
 
-    &.menu-accordion__item--veget {
-        background: url('../images/section_menu/img2.png') 50% 50% no-repeat;
-        overflow: hidden;
-        height: 100%;
-        background-size: cover;
-    }
+    // &.menu-accordion__item--veget {
+    //     background: url('../images/section_menu/img2.png') 50% 50% no-repeat;
+    //     overflow: hidden;
+    //     height: 100%;
+    //     background-size: cover;
+    // }
 
-    &.menu-accordion__item--diet {
-        background: url('../images/section_menu/img4.png') 100% 50% no-repeat;
-        height: 100%;
-        background-size: cover;
-    }
+    // &.menu-accordion__item--diet {
+    //     background: url('../images/section_menu/img4.png') 100% 50% no-repeat;
+    //     height: 100%;
+    //     background-size: cover;
+    // }
 
     &:before {
         content: '';
@@ -92,6 +96,11 @@
     align-items: center;
     justify-content: center;
     -webkit-box-pack: center;
+    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
 
     @include tablets {
         width: 2rem;
@@ -100,9 +109,15 @@
     
 }
 
+.menu-accordion__content {
+    width: 0;
+}
+
 .menu-accordion__item-text {
     white-space: normal;
     word-wrap: break-word;
-    padding: rem(30px) rem(70px);
+    padding: 0.875rem 1.375rem;
     position: absolute;
 }
+
+
