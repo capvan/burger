@@ -83,10 +83,12 @@
             
             @include tablets {
                 text-align: center;
+                font-size: 25px;
             }
 
             @include phones {
                 text-align: center;
+                font-size: 25px;
             }
         }
         
@@ -94,10 +96,18 @@
 
     &.is_active {
         .team-accordion__link::before {
-            border: 5px solid transparent;
+            border: px solid transparent;
             border-top: 5px solid #f9b43b;
             transform: rotate(180deg);
-            bottom: 5px;
+            bottom: rem(5px);
+
+                @include tablets {
+                    bottom: rem(15px);
+                }
+            
+                @include phones {
+                    bottom: rem(15px);
+                }
             }
         }
     }
@@ -140,6 +150,14 @@
         position: relative;
         color: #fff;
 
+        @include tablets {
+            font-size: rem(25px);
+        }
+    
+        @include phones {
+            font-size: rem(25px);
+        }
+
         &::before {
             content: ''; 
             position: absolute; 
@@ -150,6 +168,14 @@
             display: inline-block;
             margin-right: 15px;
             vertical-align: middle;
+
+            @include tablets {
+                bottom: rem(6px);
+            }
+        
+            @include phones {
+                bottom: rem(6px);
+            }
        }
     }
 

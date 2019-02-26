@@ -41,7 +41,9 @@
         color: #ffffff;
 
             .menu-accordion__content {
-                width: rem(550px);
+                display: inline;
+                // width: rem(550px);
+                // transition: width 0.3s;
             }
         // background-color: rgba(255, 255, 255, 0.5);
 
@@ -101,6 +103,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 50%;
+    transition: width 0.3s;
 
     @include tablets {
         width: 2rem;
@@ -111,6 +114,7 @@
 
 .menu-accordion__content {
     width: 0;
+    display: none;
 }
 
 .menu-accordion__item-text {
