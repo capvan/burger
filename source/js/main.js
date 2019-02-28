@@ -143,7 +143,8 @@ const slide = (function(){
     // window.addEventListener('resize', function(){
     // }, true);
 
-    var sliderItemsCounter = slider.children.length;
+    var sliderItemsCounter = slider.children.length; //содержит длину количества li списка ul
+    console.dir(slider);
 
     let moveSlide = function(direction){
         direction.addEventListener("click", function(e) {
@@ -170,3 +171,35 @@ const slide = (function(){
 })
 
 slide.init();
+
+//Модальное окно
+
+//Для формы заказа
+const overlay = (function () {
+    let body = document.querySelector('body');
+    let link = document.createElement('a');
+
+    link.classList.add('modal-review__close');
+    link.setAttribute('href', '#');
+
+    let openOverlay = function (modalId, content) { //передается id и содержимое модального окна 
+        let overlay = document.querySelector(modalId);
+        let innerOverlay = querySelector('.modal-review__inner');
+
+        link.addEventListener('click', (e) => { //обработка клика на созданный крестик
+            e.preventDefault();
+            closeOverlay(modalId); //закрытие
+        })
+
+        overlay.addEventListener('click', (e) => { //передается id и содержимое вне модального окна 
+            e.preventDefault();
+            if (e.target === overlay) {
+                closeOverlay(modalId); //закрытие
+            }
+        })
+
+        document.addEventListener("keydown", function(e) {
+            if 
+        })
+    }
+})
