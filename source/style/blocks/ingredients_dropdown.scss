@@ -1,0 +1,35 @@
+.ingredients__dropdown {
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 16.875rem;
+    border-radius: 0.4375rem;
+    left: -9999px;
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 10;
+    top: 0;
+} 
+
+.ingredients__list {
+    width: 100%;
+}
+
+.ingredients__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+
+.ingredients__cell {
+    padding-left: 1.25rem;
+
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+.ingredients__img {
+    display: block;
+    width: 100%;
+}

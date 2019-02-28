@@ -121,17 +121,67 @@
             <section class="section section_center burger">
                 <div class="container">
                     <div class="slider-wrap">
-                        <a class="slider__button slider__button-prev" href="#">
+                        <!-- <a class="slider__button slider__button-prev" href="#">
                             <img src="./source/images/section_slider/icons/arrow-scroll_prev.png">
                         </a>
                         <a class="slider__button slider__button-next" href="#">
                             <img src="./source/images/section_slider/icons/arrow-scroll_next.png">
-                        </a>
+                        </a> -->
+                        <button type="button" class="arrow-down arrow-down__prev"></button>
+                        <button type="button" class="arrow-down arrow-down__next"></button>
                         <ul class="slider__list">
                             <li class="slider__item">
                                 <div class="ingredients">
                                     <img class="ingredients__icon" src="./source/images/section_slider/icons/burger.png">
                                     <div class="ingredients__title">состав</div>
+                                    <div class="ingredients__dropdown">
+                                        <ul class="ingredients__list">
+                                            <li class="ingredients__row">
+                                                <div class="ingredients__cell">
+                                                    <img src="./source/images/section_slider/dropdown/icon1.png" alt="ingredients__table-icon" class="ingredients__img">
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__item">Зелень</div>
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__weight">300г</div>
+                                                </div>
+                                            </li>
+                                            <li class="ingredients__row">
+                                                <div class="ingredients__cell">
+                                                    <img src="./source/images/section_slider/dropdown/icon1.png" alt="ingredients__table-icon">
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__item">Зелень</div>
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__weight">300г</div>
+                                                </div>
+                                            </li>
+                                            <li class="ingredients__row">
+                                                <div class="ingredients__cell">
+                                                    <img src="./source/images/section_slider/dropdown/icon1.png" alt="ingredients__table-icon">
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__item">Зелень</div>
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__weight">300г</div>
+                                                </div>
+                                            </li>
+                                            <li class="ingredients__row">
+                                                <div class="ingredients__cell">
+                                                    <img src="./source/images/section_slider/dropdown/icon1.png" alt="ingredients__table-icon">
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__item">Зелень</div>
+                                                </div>
+                                                <div class="ingredients__cell">
+                                                    <div class="ingredients__weight">300г</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="product-details">
                                     <img class="product-details__icon" src="./source/images/section_slider/icons/details.png">
@@ -290,7 +340,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="team-accordion__item is_active">
+                        <li class="team-accordion__item">
                             <a class="team-accordion__link" href="#">Ричард Джэймс</a>
                             <div class="team-accordion__details">
                                 <div class="team-accordion__details-img">
@@ -516,6 +566,9 @@
         </nav>
     </div>
 
+    <div class="modal-review" id="modal-review">
+        <div class="modal-review__inner"></div>
+    </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item is-active"></li>

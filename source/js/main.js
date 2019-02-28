@@ -130,3 +130,43 @@ let verticalAcco3 = () => {
         // });
     };
 verticalAcco3();
+
+// Секция со слайдером
+
+const slide = (function(){
+    const left = document.querySelector(".arrow-down__prev");//выборка стрелки влево
+    const right = document.querySelector(".arrow-down__left");//выборка стрелки вправо
+    const slider = document.querySelector(".slider__list");//выборка контейнера
+    const computed = getComputedStyle(slider); //выбор стилей
+    let sliderWidth = parseInt(getComputedStyle(slider).width); //хранится ширина слайдера
+
+    // window.addEventListener('resize', function(){
+    // }, true);
+
+    var sliderItemsCounter = slider.children.length;
+
+    let moveSlide = function(direction){
+        direction.addEventListener("click", function(e) {
+            e.preventDefault();
+            let currentRight = parseInt(computed.right);
+
+            if (currentRight < (sliderItemsCounter-1)*sliderWidth && direction == right) {
+                slider.style.right = currentRight + sliderWidth + "px";
+            }
+
+            if (currentRight > 0 && direction == left) {
+                slider.style.right = currentRight - sliderWidth + "px";
+            }
+        });
+    }
+
+    let addListeners = function() {
+        moveSlide(right);
+        moveSlide(left);
+    }
+
+    return {init: addListeners}
+})({
+})
+
+slide.init();

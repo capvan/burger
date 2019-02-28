@@ -1,0 +1,11 @@
+.modal-review__inner {
+    max-width: rem(450px);
+    padding: rem(25px) rem(20px);
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    height: auto;
+}
