@@ -199,7 +199,17 @@ const overlay = (function () {
         })
 
         document.addEventListener("keydown", function(e) {
-            if 
-        })
+            if (e.keyCode == 27) closeOverlay(modalId);//закрыть окно esc
+        });
+    
+        if(content){
+            innerOverlay.innerHTML = content;
+            innerOverlay.appendChild(link); //добавлена ссылка закрытия после содержимого модального окна 
+        } 
     }
-})
+    return {
+        open: openOverlay,
+        close: closeOverlay,
+        setContent: setContent
+    }
+})();
